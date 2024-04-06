@@ -10,6 +10,8 @@ To set up and use this application, follow the steps below:
    ```
    If you encounter any issues regarding the database (e.g., database not found), please create a database named `creditsystemapp` using pgAdmin (connection details can be found in the docker-compose file).
 
+If you are encountering any issues while starting the application (e.g. Unique key contraint while creating table name. or table name already exist) Please restart the application 2-3 times it will solve that error. It is the error from postgres connection issue on docker.
+
 After starting the application, you can use it. If you want to add some sample data to the database, use the following API to ingest the data:
 
 - **API Endpoint**: `[GET] http://localhost:3000/api/ingest-data`
